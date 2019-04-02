@@ -18,12 +18,12 @@
   
  ### 视频主页如下
  - 首页
-  ![首页](https://github.com/Tidetrace/-video/tree/video/pages/productShow/index.jpg)
+  ![首页](https://raw.githubusercontent.com/Tidetrace/-video/video/pages/productShow/index.jpg)
   
   
   
 -  详情页
- ![详情页](https://github.com/Tidetrace/-video/tree/video/pages/productShow/detail.jpg)
+ ![详情页](https://raw.githubusercontent.com/Tidetrace/-video/video/pages/productShow/detail.jpg)
   
   
  
