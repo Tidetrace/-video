@@ -18,7 +18,7 @@
   
  ### 视频主页如下
  
-  ![](img_url)
+  ![](https://github.com/Tidetrace/-video/tree/video/pages/product%20show/index.jpg)
   
   
  
