@@ -1,0 +1,47 @@
+{
+  "usingComponents": {
+    "van-button": "/dist/button/index",
+    "van-search": "/dist/search/index",
+    "van-tabbar": "/dist/tabbar/index",
+    "van-tabbar-item": "/dist/tabbar-item/index",
+    "van-icon": "/dist/icon/index",
+    "van-tab": "/dist/tab/index",
+    "van-tabs": "/dist/tabs/index",
+    "van-rate": "/dist/rate/index",
+    "van-notice-bar": "/dist/notice-bar/index"
+  },
+  "pages": [
+    "pages/index/index",
+    "pages/plays/plays",
+    "pages/dynamic/dynamic",
+    "pages/person/person"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "utils/icon/index-normal.png",
+        "selectedIconPath": "utils/icon/index-active.png"
+      },
+      {
+        "pagePath": "pages/dynamic/dynamic",
+        "text": "列表",
+        "iconPath": "utils/icon/read-normal.png",
+        "selectedIconPath": "utils/icon/read-active.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "我的",
+        "iconPath": "utils/icon/person-normal.png",
+        "selectedIconPath": "utils/icon/person-active.png"
+      }
+    ]
+  }
+}

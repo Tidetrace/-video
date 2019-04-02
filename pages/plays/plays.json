@@ -1,0 +1,23 @@
+{
+  "usingComponents": {
+    "van-button": "/dist/button/index",
+    "van-search": "/dist/search/index",
+    "van-tabbar": "/dist/tabbar/index",
+    "van-tabbar-item": "/dist/tabbar-item/index",
+    "van-icon": "/dist/icon/index",
+    "van-tab": "/dist/tab/index",
+    "van-tabs": "/dist/tabs/index",
+    "van-rate": "/dist/rate/index",
+    "van-notice-bar": "/dist/notice-bar/index",
+    "van-cell": "/dist/cell/index",
+    "van-cell-group": "/dist/cell-group/index",
+    "van-popup": "/dist/popup/index"
+  },
+  "navigationBarBackgroundColor": "#C5C1AA",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "视频详情页",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true,
+  "disableSwipeBack": true
+}

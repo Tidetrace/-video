@@ -1,0 +1,42 @@
+<!-- 搜索相关布局 -->
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" show-action bind:search="onSearch" bind:cancel="onCancel" />
+<!-- link 模式，在右侧显示链接箭头 -->
+<van-notice-bar mode="" speed ="30" color="#7A7A7A" text="笔上青风度年华，纸上情字青春花，伊藤蔓花织戒指，定此终生叶雨花" />
+<!-- 导航标签相关布局 -->
+<van-tabs animated bind:click="onClick">
+  <van-tab wx:for="{{subject}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" title="{{item.title}}">
+    <!-- 广告位 -->
+    <text wx:for="{{item.content}}" wx:for-index="idx" wx:for-item="item" wx:key="idx">
+      {{item.texts}}
+    </text>
+    <!-- 电影显示 -->
+    <view class="" hover-class="none" hover-stop-propagation="false">
+      <!-- 左侧图片显示 -->
+      <block wx:for="{{item.list}}" wx:for-index="idx" wx:for-item="item" class="">
+        <view class="blocks">
+          <view class="directs">
+            <navigator url="../../pages/plays/plays?id={{item.id}}">
+              <image class="" src="../images/{{item.image}}" mode="aspectFit|aspectFill|widthFix" lazy-load="true" binderror="" bindload="" />
+            </navigator>
+          </view>
+          <view class="left-info">
+            <label for="lab-author">评分：
+              <van-rate value="{{item.score}}" size="15" icon="like" void-icon="like-o" readonly bind:change="onChange" />
+            </label>
+            <label for="lab-title">影名：{{item.title}}</label>
+            <label for="lab-info">简介：{{item.info}}</label>
+          </view>
+        </view>
+      </block>
+      <!-- 右侧作者和简介 -->
+      <view></view>
+    </view>
+  </van-tab>
+</van-tabs>
+<!-- 底部导航相关布局 -->
+<!-- <van-tabbar active="{{ active }}" wx:key="item" active-color="#CD6839" fixed="true" bind:change="onChange" safe-area-inset-bottom="true">
+  <van-tabbar-item wx:for="{{icon}}" wx:for-index="idx" wx:for-item="item">
+    <image slot="icon" src="{{ item.normal }}" mode="aspectFit" />
+    <image slot="icon-active" src="{{ item.active }}" mode="aspectFit" /> {{item.title}}
+  </van-tabbar-item>
+</van-tabbar> -->

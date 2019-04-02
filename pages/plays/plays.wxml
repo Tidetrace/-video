@@ -1,0 +1,25 @@
+<!-- 搜索相关布局 -->
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" show-action bind:search="onSearch" bind:cancel="onCancel" />
+<!-- 视频详情播放 -->
+<view class='section-tc'>
+  <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+    binderror="videoErrorCallback" danmu-list="{{danmuList}}" vslide-gesture-in-fullscreen title="这是视频的title" enable-danmu danmu-btn controls show-fullscreen-btn></video>
+</view>
+
+<!-- 广告位 -->
+<view class='ad' wx:if="{{adShow}}">ddaa</view>
+<view class='author-info'>
+  <van-cell-group>
+    <van-cell title="{{title}}" size="large" value="播放量：{{view_counts}}" label="{{time}}年上映" border="true" />
+  </van-cell-group>
+  <label class='info'>{{mgs}}</label>
+</view>
+
+<!-- 评论 -->
+<textarea class='the_prw_in' bindinput='bindblur' cursor-spacing="130" placeholder='说点什么吧...{{id}}' maxlength="76">
+</textarea>
+<view class='the_prw_btn' bindtap='btn_send'>
+  留言
+</view>
+
+<view>评论内容：</view>
